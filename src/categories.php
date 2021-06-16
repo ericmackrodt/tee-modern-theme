@@ -1,4 +1,4 @@
-<window window-id="categories" v-bind:desktop="sidePanelDesk" title="Categories" icon="/assets/folder-icon.png">
+<window window-id="categories" v-bind:desktop="sidePanelDesk" title="Categories" icon="/templates/modern/public/folder-icon.png">
   <div id="categories-widget">
     <?php foreach ($categories as $id => $category) : ?>
       <a href="/category?id=<?= $category->id ?>">

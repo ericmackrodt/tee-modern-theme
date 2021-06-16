@@ -11,7 +11,7 @@
             | <?= $title ?>
         <?php endif; ?>
     </title>
-    <link rel="stylesheet" href="/templates/output/css/modern.css" />
+    <link rel="stylesheet" href="/templates/modern/css/modern.css" />
     <script>
         if (!!window.fetch && !window.location.protocol.includes("https") && !window.location.host.includes("localhost")) {
             window.location = window.location.href.replace("http://", "https://")
@@ -23,7 +23,7 @@
 <body>
     <div id="root">
         <desktop v-slot="mainDesk" desk-id="main">
-            <window class="window-margin main" window-id="main" v-bind:desktop="mainDesk" title="The Eric Experiment" icon="/assets/root-icon.png">
+            <window class="window-margin main" window-id="main" v-bind:desktop="mainDesk" title="The Eric Experiment" icon="/templates/modern/public/root-icon.png">
                 <template v-slot:top>
                     <div id="banner"></div>
 
@@ -45,7 +45,7 @@
             </window>
         </desktop>
     </div>
-    <script type="text/javascript" src="/templates/output/js/client.js"></script>
+    <script type="text/javascript" src="/templates/modern/js/client.js"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->

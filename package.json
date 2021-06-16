@@ -4,12 +4,13 @@
   "description": "Modern Theme for The Eric Experiment",
   "main": "index.js",
   "scripts": {
-    "remove:dist": "rimraf output/",
-    "scss": "sass src/scss/index.scss:output/css/modern.css --style compressed",
-    "copy-php": "cpx src/**/*.php output",
-    "scss:watch": "sass --watch src/scss/index.scss:output/css/modern.css",
+    "remove:dist": "rimraf modern/",
+    "scss": "sass src/scss/index.scss:modern/css/modern.css --style compressed",
+    "copy-php": "copyfiles -f src/**/*.php modern",
+    "copy-public": "cd src && copyfiles \"./public/**/*.*\" ../modern",
+    "scss:watch": "sass --watch src/scss/index.scss:modern/css/modern.css",
     "build:client": "webpack --config webpack.config.js",
-    "build": "yarn remove:dist && yarn scss &&  yarn build:client && yarn copy-php"
+    "build": "yarn remove:dist && yarn scss &&  yarn build:client && yarn copy-php && yarn copy-public"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,7 @@
   },
   "homepage": "https://github.com/ericmackrodt/tee-modern-theme#readme",
   "dependencies": {
-    "cpx": "^1.5.0",
+    "copyfiles": "^2.4.1",
     "node-sass": "^4.14.1",
     "rimraf": "^3.0.2",
     "sass": "^1.26.10",

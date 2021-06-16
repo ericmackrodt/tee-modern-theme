@@ -9,7 +9,7 @@
   <div id="welcome">
     <div class="profile">
       <div class="avatar">
-        <img src="/assets/profile.jpg" alt="MEEEEE!!!">
+        <img src="/templates/modern/public/profile.jpg" alt="MEEEEE!!!">
       </div>
     </div>
     <div class="content">

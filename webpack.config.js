@@ -6,7 +6,7 @@ module.exports = {
   entry: "./src/js/index.js",
   devtool: "cheap-source-map",
   output: {
-    path: path.resolve(__dirname, "output/js"), // string
+    path: path.resolve(__dirname, "modern/js"), // string
     // the target directory for all output files
     // must be an absolute path (use the Node.js path module)
     filename: "client.js", // string

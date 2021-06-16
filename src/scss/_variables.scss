@@ -1,21 +1,25 @@
 @font-face {
   font-family: "perfect_dos_vga_437regular";
-  src: url("/assets/dos/perfect_dos_vga_437-webfont.woff2") format("woff2"),
-    url("/assets/dos/perfect_dos_vga_437-webfont.woff") format("woff");
+  src: url("/templates/modern/public/dos/perfect_dos_vga_437-webfont.woff2")
+      format("woff2"),
+    url("/templates/modern/public/dos/perfect_dos_vga_437-webfont.woff")
+      format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "ms_sans_serifregular";
-  src: url("/assets/sans/ms_sans_serif-webfont.woff2") format("woff2"),
-    url("/assets/sans/ms_sans_serif-webfont.woff") format("woff");
+  src: url("/templates/modern/public/sans/ms_sans_serif-webfont.woff2")
+      format("woff2"),
+    url("/templates/modern/public/sans/ms_sans_serif-webfont.woff")
+      format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-$page-background: "/assets/starfiel.gif";
-$header-image: "/assets/header.jpg";
+$page-background: "/templates/modern/public/starfiel.gif";
+$header-image: "/templates/modern/public/header.jpg";
 $size-landscape-phone: 36em;
 $size-tablet: 48em;
 $size-desktop: 62em;
