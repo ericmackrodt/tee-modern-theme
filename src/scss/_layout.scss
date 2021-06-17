@@ -5,93 +5,60 @@ body {
 }
 
 h1 {
-  font-family: $font-family;
   font-size: $font-size-900;
   font-weight: $font-weight-medium;
-  color: $font-dark-grey;
   line-height: 2.25rem;
+  margin: 0;
 }
 
 h2 {
-  font-family: $font-family;
   font-size: $font-size-800;
   font-weight: $font-weight-medium;
-  color: $font-dark-grey;
   line-height: 2rem;
+  margin: 0;
 }
 
 h3 {
-  font-family: $font-family;
   font-size: $font-size-700;
   font-weight: $font-weight-medium;
-  color: $font-dark-grey;
   line-height: 1.75rem;
+  margin: 0;
 }
 
 h4 {
-  font-family: $font-family;
   font-size: $font-size-600;
   font-weight: $font-weight-medium;
-  color: $font-dark-grey;
   line-height: 1.5rem;
+  margin: 0;
 }
 
 p {
-  font-family: $font-family;
   font-size: $font-size-600;
   font-weight: $font-weight-regular;
-  color: $font-dark-grey;
   line-height: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
-#banner {
-  background-image: url($header-image);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#page {
+  margin-top: 1rem;
   position: relative;
-  min-height: 8rem;
-
-  @include landscape-phone {
-    min-height: 10rem;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 
   @include tablet {
-    min-height: 13rem;
+    flex-direction: row;
+    align-items: flex-start;
   }
-
-  @include desktop {
-    min-height: 15rem;
-  }
-
-  @include large-desktop {
-    min-height: 16rem;
-  }
-}
-
-#page {
-  font-family: $font-family;
-
-  .desktop {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+  > .content {
+    flex: 1;
+    .title {
+      background-color: transparent;
+      text-decoration: none;
+      border-bottom: 0;
+    }
 
     @include tablet {
-      flex-direction: row;
-      align-items: flex-start;
-    }
-    > .content {
-      flex: 1;
-      padding: 0.5rem;
-      .title {
-        background-color: transparent;
-        text-decoration: none;
-        border-bottom: 0;
-      }
-
       &:not(:last-child) {
         padding-right: 1.5rem;
       }
@@ -99,8 +66,22 @@ p {
   }
 }
 
+#website {
+  max-width: 75rem;
+  margin: auto;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .side-content {
   padding: 0.5rem;
+  padding-right: 0;
   @include tablet {
     width: 25%;
   }
@@ -127,56 +108,66 @@ p {
   }
 }
 
-#footer {
-  background-color: $main-blue;
+footer {
   color: #ffffff;
-  padding: 0.5rem;
+
+  .footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .footer-row-crazy-separator {
+    margin-top: 1rem;
+    width: 100%;
+    background: url(/templates/modern/public/flamingline.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 20px;
+    background-position-y: bottom;
+    position: relative;
+
+    .right {
+      position: absolute;
+      bottom: 0.5rem;
+      right: 1rem;
+    }
+
+    .left {
+      float: left;
+      left: 1rem;
+    }
+  }
 
   h4 {
     color: #fff;
     font-weight: $font-weight-bold;
+    font-size: 2rem;
   }
 
   #tags {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 
     .tag {
-      color: #ffffff;
+      color: $main-green;
       text-decoration: none;
       padding: 0.5rem;
       font-size: $font-size-600;
 
       &:hover {
-        background-color: $main-blue-lighter;
+        background-color: $main-green;
+        color: $font-dark-grey;
       }
     }
   }
 }
 
-.window-margin {
-  @include tablet {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-}
-
-.gallery-container {
-  > div {
-    > ul {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-
-      > li {
-        padding: 0.25rem;
-        border: 1px solid $grey100;
-        margin-bottom: 0.5rem;
-        margin-right: 0.5rem;
-        cursor: pointer;
-        box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.15);
-      }
-    }
-  }
+.separator {
+  width: 100%;
+  margin-top: 0.5rem;
 }

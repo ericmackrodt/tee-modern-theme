@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="content">
-      <h2>Welcome</h2>
+      <img src="/templates/modern/public/welcome.gif">
       <?= $intro ?>
       <div class="social-icons">
         <a href="https://twitter.com/ericmackrodt" target="_blank" class="social-icon twitter">
@@ -36,6 +36,7 @@
       </div>
     </div>
   </div>
+  <img src="/templates/modern/public/anibar2.gif" class="separator" />
   <h1>Latest parts of the experiment</h1>
   <?php $this->insert('modern::post-list', ['posts' => $posts]) ?>
 </div>

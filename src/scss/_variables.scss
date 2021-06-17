@@ -1,30 +1,12 @@
-@font-face {
-  font-family: "perfect_dos_vga_437regular";
-  src: url("/templates/modern/public/dos/perfect_dos_vga_437-webfont.woff2")
-      format("woff2"),
-    url("/templates/modern/public/dos/perfect_dos_vga_437-webfont.woff")
-      format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "ms_sans_serifregular";
-  src: url("/templates/modern/public/sans/ms_sans_serif-webfont.woff2")
-      format("woff2"),
-    url("/templates/modern/public/sans/ms_sans_serif-webfont.woff")
-      format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 $page-background: "/templates/modern/public/starfiel.gif";
 $header-image: "/templates/modern/public/header.jpg";
+$logo: "/templates/modern/public/logo.png";
 $size-landscape-phone: 36em;
 $size-tablet: 48em;
 $size-desktop: 62em;
 $size-large-desktop: 75em;
-
+$main-background: #000000;
+$secondary-background: #ffffff;
 $grey50: #fafafa;
 $grey100: #f5f5f5;
 $grey200: #e0e0e0;
@@ -35,8 +17,12 @@ $grey600: #424242;
 $grey900: #212121;
 
 $main-blue: #1238b3;
-$main-blue-lighter: #265aff;
+$main-blue-lighter: #196aff;
 $main-orange: #ff9933;
+$main-green: #00ff00;
+$secondary-green: #008000;
+$main-pink: #bd0dff;
+$main-red: #ff300d;
 
 $font-size-base: 16px;
 $font-size-200: 0.5rem;
@@ -52,12 +38,12 @@ $font-weight-medium: 500;
 $font-weight-regular: 400;
 $font-weight-light: 300;
 $font-dark-grey: $grey900;
-$font-mid-grey: $grey600;
-$font-light-grey: $grey500;
-$font-super-light-grey: $grey50;
-$font-family-sans: "ms_sans_serifregular";
-$font-family-dos: "perfect_dos_vga_437regular";
+$font-mid-grey: $grey500;
+$font-light-grey: $grey50;
 $font-family: "Roboto", sans-serif;
+$font-family-classic: "Times New Roman", Times, serif;
+$font-family-sans: "ms_sans_serifregular", $font-family;
+$font-family-dos: "perfect_dos_vga_437regular", $font-family;
 
 @mixin landscape-phone {
   @media screen and (min-width: $size-landscape-phone) {

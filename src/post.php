@@ -22,7 +22,7 @@
 <meta name="twitter:image" content="https://www.theericexperiment.com/post/asset/143/143/@image?fit=cover" />
 <?php $this->end() ?>
 
-<div class="content">
+<div class="content post">
   <h1><?= $this->e($data->title); ?></h1>
   <div id="post-metadata">
     <div class="metadata">

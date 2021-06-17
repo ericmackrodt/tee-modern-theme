@@ -1,3 +1,10 @@
+.window-margin {
+  @include tablet {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
 .window-border {
   margin: auto;
   max-width: 75rem;
@@ -183,12 +190,6 @@
       }
     }
   }
-
-  // .menuitem,
-  // mobile-menu {
-  //   line-height: 1.25rem;
-  //   height: 100%;
-  // }
 
   .menuitem {
     padding: 0.4rem 0.6rem;

@@ -5,7 +5,7 @@
   </div>
 <?php endif; ?>
 
-<div class="content">
+<div class="content page">
   <?= $this->section('content') ?>
   <div id="disqus_thread"></div>
 </div>

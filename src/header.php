@@ -1,1 +1,1 @@
-<?php echo "<h{$size}>{$content}</h{$size}>";
+<?php echo "<h{$size} id=\"{$id}\">{$content}</h{$size}>";

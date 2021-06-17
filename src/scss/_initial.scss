@@ -5,8 +5,8 @@ body,
   padding: 0;
   // height: 100%;
   font-size: $font-size-base;
-  font-family: $font-family;
-  color: $font-dark-grey;
+  font-family: $font-family-classic;
+  color: $font-light-grey;
 }
 
 input,
@@ -18,4 +18,16 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+a {
+  color: $main-green;
+}
+
+a:active {
+  color: $secondary-green;
+}
+
+a:visited {
+  color: $main-green;
 }

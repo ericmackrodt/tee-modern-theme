@@ -1,0 +1,59 @@
+header {
+  > #mainmenu {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+    .mainmenu-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mainmenu-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+
+      > .menuitem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: $font-family-dos;
+
+        padding: 0.4rem 0.6rem;
+        cursor: pointer;
+        color: $grey50;
+        text-decoration: none;
+        &:first-letter {
+          text-decoration: underline;
+        }
+        &:active,
+        &.active {
+          background: #000080;
+          color: #fff;
+        }
+
+        @include landscape-phone {
+          padding: 0.15rem 0.6rem;
+        }
+
+        > img {
+          padding: 0.5rem;
+        }
+
+        &:hover {
+          background-color: $grey100;
+          color: $font-dark-grey;
+        }
+      }
+    }
+  }
+}

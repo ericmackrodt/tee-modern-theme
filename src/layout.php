@@ -22,30 +22,52 @@
 
 <body>
     <div id="root">
-        <desktop v-slot="mainDesk" desk-id="main">
-            <window class="window-margin main" window-id="main" v-bind:desktop="mainDesk" title="The Eric Experiment" icon="/templates/modern/public/root-icon.png">
-                <template v-slot:top>
-                    <div id="banner"></div>
-
-                    <div class="menubar">
-                        <?php $this->insert('modern::main-menu') ?>
+        <div id="website">
+            <header>
+                <a href="/">
+                    <img id="logo" src="/templates/modern/public/logo.png" title="Logo" />
+                </a>
+                <?php $this->insert('modern::main-menu') ?>
+            </header>
+            <section id="page">
+                <?= $this->section('content') ?>
+                <?php if ($showSideContent) : ?>
+                    <?php $this->insert('modern::side-content') ?>
+                <?php endif; ?>
+            </section>
+            <footer>
+                <div class="footer-row">
+                    <div class="footer-row-crazy-separator">
+                        <div class="left">
+                            <img src="/templates/modern/public/ani_raptor.gif">
+                        </div>
+                        <div class="right">
+                            <img src="/templates/modern/public/cat.gif">
+                        </div>
                     </div>
-                </template>
-                <section id="page">
-                    <desktop v-slot="sidePanelDesk" desk-id="side-panel">
-                        <?= $this->section('content') ?>
-                        <?php if ($showSideContent) : ?>
-                            <?php $this->insert('modern::side-content') ?>
-                        <?php endif; ?>
-                    </desktop>
-                </section>
-                <section id="footer">
-                    <?php $this->insert('modern::tags') ?>
-                </section>
-            </window>
-        </desktop>
+                </div>
+                <?php $this->insert('modern::tags') ?>
+                <div class="footer-row">
+                    <div id="compatibility-content">
+                        <a href="/windows3x/essentialsoftware#netscapecommunicator407"><img src="/templates/modern/public/netscap4.gif" alt="Compatible with Netscape" /></a>
+                        <a href="/windows3x/essentialsoftware#internetexplorer501"><img src="/templates/modern/public/ie.gif" width="88" height="31" alt="Compatible with IE" /></a>
+                        <img src="/templates/modern/public/800x600.gif">
+                        <img src="/templates/modern/public/frontpg.gif">
+                        <a href="/windows3x/essentialsoftware#mirc591"><img src="/templates/modern/public/mircban.gif"></a>
+                    </div>
+                </div>
+                <div class="footer-row">
+                    Copyright © 1988-2021 The Eric Experiment
+                </div>
+                <div class="footer-row">
+                    <img src="/templates/modern/public/neon.gif">
+                </div>
+                <div class="footer-row">
+                    <img src="/templates/modern/public/skyline.gif">
+                </div>
+            </footer>
+        </div>
     </div>
-    <script type="text/javascript" src="/templates/modern/js/client.js"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
