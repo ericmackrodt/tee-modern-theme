@@ -1,5 +1,6 @@
 const path = require("path");
-const VueLoaderPlugin = require("vue-loader/lib/plugin");
+// const VueLoaderPlugin = require("vue-loader/lib/plugin");
+const webpack = require("webpack");
 
 module.exports = {
   mode: "production",
@@ -17,18 +18,22 @@ module.exports = {
   resolve: {
     // Add `.ts` as a resolvable extension.
     extensions: [".vue", ".js"],
-    alias: { vue: "vue/dist/vue.esm.js" },
+    // alias: { vue: "vue/dist/vue.esm.js" },
   },
   module: {
     rules: [
-      {
-        test: /\.vue$/,
-        loader: "vue-loader",
-      },
+      // {
+      //   test: /\.vue$/,
+      //   loader: "vue-loader",
+      // },
     ],
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+    }),
     // make sure to include the plugin!
-    new VueLoaderPlugin(),
+    // new VueLoaderPlugin(),
   ],
 };

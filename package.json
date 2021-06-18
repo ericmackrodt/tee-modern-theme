@@ -24,20 +24,12 @@
   "homepage": "https://github.com/ericmackrodt/tee-modern-theme#readme",
   "dependencies": {
     "copyfiles": "^2.4.1",
+    "jquery": "^3.6.0",
     "node-sass": "^4.14.1",
     "rimraf": "^3.0.2",
-    "sass": "^1.26.10",
-    "vue": "^2.6.11",
-    "vue-class-component": "^7.2.5",
-    "vue-click-outside": "^1.1.0",
-    "vue-hot-reload-api": "^2.3.4",
-    "vue-light-gallery": "^1.0.1",
-    "vue-property-decorator": "^9.0.0"
+    "sass": "^1.26.10"
   },
   "devDependencies": {
-    "@vue/component-compiler-utils": "^3.2.0",
-    "vue-loader": "^15.9.3",
-    "vue-template-compiler": "^2.6.11",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   }

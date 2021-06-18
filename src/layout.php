@@ -24,9 +24,11 @@
     <div id="root">
         <div id="website">
             <header>
-                <a href="/">
-                    <img id="logo" src="/templates/modern/public/logo.png" title="Logo" />
-                </a>
+                <div id="logo-container">
+                    <a class="logo-link" href="/">
+                        <img id="logo" src="/templates/modern/public/logo.png" title="Logo" />
+                    </a>
+                </div>
                 <?php $this->insert('modern::main-menu') ?>
             </header>
             <section id="page">
@@ -68,6 +70,7 @@
             </footer>
         </div>
     </div>
+    <script async src="/templates/modern/js/client.js"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->

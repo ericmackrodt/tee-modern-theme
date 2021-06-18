@@ -1,14 +1,37 @@
-import Vue from "vue";
-import Desktop from "./desktop";
-import Window from "./window";
-import MobileMenu from "./mobile-menu";
-import Gallery from "./gallery";
+/**
+ * Gallery
+ */
 
-Vue.component("desktop", Desktop);
-Vue.component("window", Window);
-Vue.component("mobileMenu", MobileMenu);
-Vue.component("gallery", Gallery);
+/**
+ * Main menu toggle
+ */
 
-const vueApp = new Vue({
-  el: "#root",
+function detachDocumentDismisser() {
+  $(window).off("click");
+}
+function attachDocumentDismisser() {
+  $(window).on("click", function () {
+    detachDocumentDismisser();
+    $(".mainmenu-content").removeClass("visible");
+  });
+}
+
+$(".mainmenu-content").on("click", function (event) {
+  event.stopPropagation();
 });
+
+$(".main-menu-mobile-button").on("click", function (event) {
+  event.stopPropagation();
+  const $menu = $(this).siblings(".mainmenu-content");
+  const hasClass = $menu.hasClass("visible");
+  if (!hasClass) {
+    attachDocumentDismisser();
+    $menu.addClass("visible");
+  } else {
+    $menu.removeClass("visible");
+  }
+});
+
+/**
+ * Window minimizer
+ */

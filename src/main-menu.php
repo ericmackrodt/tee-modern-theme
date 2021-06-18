@@ -1,6 +1,10 @@
 <div id="mainmenu">
+  <div class="main-menu-mobile-button">
+    <img src="/templates/modern/public/root-icon.png" alt="Menu" />
+    Menu
+  </div>
   <div class="mainmenu-content">
-    <div class="mainmenu-row">
+    <div class="mainmenu-row separator">
       <img src="/templates/modern/public/anibar.gif">
     </div>
     <div class="mainmenu-row">
@@ -11,8 +15,9 @@
         </a>
       <?php endforeach; ?>
     </div>
-    <div class="mainmenu-row">
+    <div class="mainmenu-row separator">
       <img src="/templates/modern/public/anibar.gif">
     </div>
   </div>
+  <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
 </div>
