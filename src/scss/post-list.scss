@@ -1,8 +1,30 @@
-#post-list {
+#posts-container {
+  display: flex;
+  flex-direction: column;
   background-color: $page-background;
   background: url(/templates/modern/public/Fine_Speckled0001A16B.gif);
   padding: 1rem;
   margin-top: 0.5rem;
+
+  > .pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    > div {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      &.right {
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
+#post-list {
   display: grid;
   grid-template-columns: 1fr;
 

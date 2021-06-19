@@ -36,7 +36,7 @@
       </div>
     </div>
   </div>
-  <img src="/templates/modern/public/anibar2.gif" class="separator" />
+  <img src="/templates/modern/public/anibar2.gif" class="home-separator" />
   <h1>Latest parts of the experiment</h1>
-  <?php $this->insert('modern::post-list', ['posts' => $posts]) ?>
+  <?php $this->insert('modern::post-list', ['posts' => $posts, 'custom_next_link' => ['url' => '/posts?page=1', 'icon' => '/templates/retro/public/more_md_wht.gif']]) ?>
 </div>
