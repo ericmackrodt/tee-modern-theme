@@ -1,3 +1,4 @@
+@import "~magnific-popup/dist/magnific-popup.css";
 @import "_fonts";
 @import "_variables";
 @import "_initial";
@@ -6,10 +7,12 @@
 @import "_layout";
 @import "main-menu";
 @import "home";
+@import "page-menu";
 @import "post-list";
 @import "post";
 @import "categories";
 @import "gallery";
 @import "text-content";
+@import "file-download";
 @import "compatibility";
 @import "third-party";

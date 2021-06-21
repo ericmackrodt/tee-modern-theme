@@ -4,7 +4,7 @@ const webpack = require("webpack");
 
 module.exports = {
   mode: "production",
-  entry: "./src/js/index.js",
+  entry: ["./src/js/index.js"],
   devtool: "cheap-source-map",
   output: {
     path: path.resolve(__dirname, "modern/js"), // string

@@ -1,9 +1,5 @@
 <div class="gallery-container">
-  <gallery>
-    <ul>
-      <?php foreach ($images as $i => $image) : ?>
-        <li><img src="<?= $image->url ?>" /></li>
-      <?php endforeach; ?>
-    </ul>
-  </gallery>
+  <?php foreach ($images as $i => $image) : ?>
+    <a href="<?= $image->url ?>" title=""><img src="/img.php?p=<?= $image->url ?>&w=150" alt="" /></a>
+  <?php endforeach; ?>
 </div>
