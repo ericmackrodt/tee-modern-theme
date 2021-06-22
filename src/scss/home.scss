@@ -37,6 +37,13 @@
   }
 }
 
+.blerb {
+  b {
+    font-weight: $font-weight-bold;
+    color: $main-green;
+  }
+}
+
 .home-separator {
   margin-top: 0.5rem;
   width: 100%;
