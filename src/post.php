@@ -38,9 +38,7 @@
       ?>
       <?php foreach ($data->tags as $id => $tag) : ?>
         <?php $isLast = $i == $len - 1; ?>
-        <a href="/tag?id=<?= $tag->id ?>">
-          <?= $this->e($tag->name) ?>
-        </a><?php if (!$isLast) : ?>, <?php endif; ?>
+        <a href="/tag?id=<?= $tag->id ?>"><?= $this->e($tag->name) ?></a><?php if (!$isLast) : ?>, <?php endif; ?>
       <?php $i++ ?>
     <?php endforeach; ?>
     </div>
