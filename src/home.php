@@ -42,7 +42,8 @@
       With that in mind, make sure to try this website out on your retro computer running an old browser such as <a href="/windows3x/essentialsoftware#netscapecommunicator407">Netscape 4</a>. I built a mode that is 100% compatible with them.
     </p>
   </div>
-  <img src="/templates/modern/public/anibar2.gif" class="home-separator" />
+
+  <div class="lemmings-bar home-separator"></div>
   <h1>Latest parts of the experiment</h1>
   <?php $this->insert('modern::post-list', ['posts' => $posts, 'custom_next_link' => ['url' => '/posts?page=1', 'icon' => '/templates/retro/public/more_md_wht.gif']]) ?>
 </div>

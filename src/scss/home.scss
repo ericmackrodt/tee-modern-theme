@@ -45,9 +45,15 @@
 }
 
 .home-separator {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   width: 100%;
 }
+
+.lemmings-bar {
+  background-image: url(/templates/modern/public/lemmings_walking.gif);
+  height: 30px;
+}
+
 .social-icons {
   display: flex;
   flex-direction: row;
