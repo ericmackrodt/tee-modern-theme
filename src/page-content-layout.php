@@ -1,4 +1,4 @@
-<?php $this->layout('modern::layout', []) ?>
+<?php $this->layout('modern::layout', ['title' => $this->e($title)]) ?>
 <?php if (!empty($this->section('left-content'))) : ?>
   <div class="side-content">
     <?= $this->section('left-content') ?>

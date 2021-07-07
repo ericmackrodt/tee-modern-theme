@@ -5,7 +5,7 @@
   </div>
   <div class="mainmenu-content">
     <div class="mainmenu-row separator">
-      <img src="/templates/modern/public/anibar.gif">
+      <div class="anibar"></div>
     </div>
     <div class="mainmenu-row">
       <?php foreach ($mainMenu as $key => $item) : ?>
@@ -16,7 +16,7 @@
       <?php endforeach; ?>
     </div>
     <div class="mainmenu-row separator">
-      <img src="/templates/modern/public/anibar.gif">
+      <div class="anibar"></div>
     </div>
   </div>
   <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
