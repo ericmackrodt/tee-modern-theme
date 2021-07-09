@@ -1,5 +1,5 @@
 <div class="gallery-container">
   <?php foreach ($images as $i => $image) : ?>
-    <a href="<?= $image->url ?>" title=""><img src="/img.php?p=<?= $image->url ?>&w=150" alt="" /></a>
+    <a href="<?= getGalleryImage($image->url) ?>" title=""><img src="<?= getGalleryThumbnail($image->url) ?>" alt="" /></a>
   <?php endforeach; ?>
 </div>

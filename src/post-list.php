@@ -5,11 +5,11 @@ $pagination = createPagination($posts);
 <div id="posts-container">
   <div id="post-list">
     <?php foreach ($pagination->posts as $post) : ?>
-      <?php $image = $post->full_path . $post->image; ?>
+      <?php $image = getPostThumbnail($post->image) ?>
       <a href="/post/<?= $post->slug ?>" class="post-item">
         <div class="item-inner">
           <div class="post-image">
-            <img src="/img.php?p=<?= $image ?>&w=480&fit=cover&aspectRatio=16:9" border="0" alt="<?= $post->title ?>" />
+            <img src="<?= $image ?>" border="0" alt="<?= $post->title ?>" />
           </div>
           <div class="post-content">
             <div class="post-title">
