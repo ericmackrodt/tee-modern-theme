@@ -59,6 +59,11 @@
                         <a href="http://www.theoldnet.com/#frombadge" title="Are you tired of this new Internet yet? Time to Get TheOldNet!" target="_blank">
                             <img src="//theoldnet.com/images/theoldnetanimblur2.gif" width="88" height="31" border=0>
                         </a>
+                        <!-- Start Old'aVista Button Code -->
+                        <a href="http://www.oldavista.com/" rel="embed-button" title="Old'aVista: The most powerful guide to the OLD internet!">
+                            <img src="//www.oldavista.com/public/button.gif" width="88" height="31" border="0">
+                        </a>
+                        <!-- End Old'aVista Button Code -->
                     </div>
                 </div>
                 <div class="footer-row">

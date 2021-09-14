@@ -46,4 +46,11 @@
   <div class="lemmings-bar home-separator"></div>
   <h1>Latest parts of the experiment</h1>
   <?php $this->insert('modern::post-list', ['posts' => $posts, 'custom_next_link' => ['url' => '/posts?page=1', 'icon' => '/templates/retro/public/more_md_wht.gif']]) ?>
+  <!-- Start Old'aVista Banner Code -->
+  <p style="width: 100%; text-align: center; margin-top: 1rem;">
+    <a href="http://www.oldavista.com/" rel="embed-banner" title="Old'aVista: The most powerful guide to the OLD internet!">
+      <img src="//www.oldavista.com/public/banner.gif" width="468" height="60" border="0">
+    </a>
+  </p>
+  <!-- End Old'aVista Banner Code -->
 </div>
